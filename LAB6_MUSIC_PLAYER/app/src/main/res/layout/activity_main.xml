@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9F97C3"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_margin="40sp"
+        android:background="#9F7C7C"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="60sp"
+            android:layout_marginRight="60sp"
+            android:layout_marginBottom="60sp"
+            android:background="#DFC1C1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="40sp"
+                        android:layout_height="35sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5sp"
+                        android:background="#00000000"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/back" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30sp"
+                        android:fontFamily="@font/aladin"
+                        android:gravity="center"
+                        android:text="Listening to"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30sp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="208dp"
+                        app:srcCompat="@drawable/music_cover1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="120sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/songName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="#00000000"
+                            android:ems="10"
+                            android:fontFamily="@font/aladin"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:text="Name"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/startTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                tools:text="0:00" />
+
+                            <SeekBar
+                                android:id="@+id/seekBar"
+                                android:layout_width="130sp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25sp"
+                                android:layout_marginRight="25sp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/finalTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:includeFontPadding="false" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="55sp"
+                            android:layout_marginLeft="25sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginRight="25sp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/rewind"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:layout_weight="1"
+                                android:background="#00000000"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/rewind" />
+
+                            <ImageButton
+                                android:id="@+id/previous"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:layout_weight="1"
+                                android:background="#00000000"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/previous" />
+
+                            <ImageButton
+                                android:id="@+id/play"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:layout_weight="1"
+                                android:background="#00000000"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/play" />
+
+                            <ImageButton
+                                android:id="@+id/stop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:layout_weight="1"
+                                android:background="#00000000"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/stop" />
+
+                            <ImageButton
+                                android:id="@+id/next"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:layout_weight="1"
+                                android:background="#00000000"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/next" />
+
+                            <ImageButton
+                                android:id="@+id/forward"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:layout_weight="1"
+                                android:background="#00000000"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/forward" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
